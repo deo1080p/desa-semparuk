@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Desa | Desa Semparuk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                    <h2>Desa Semparuk</h2>
+                    <span>Sambas • Kalimantan Barat</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a class="active" href="berita.html">Berita</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari informasi...">
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- TAMBAHKAN INI -->
+    <div id="searchDropdown" class="search-dropdown"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="page-content">
+
+            <h1>Berita & Informasi Desa</h1>
+
+            <p>
+                Kegiatan masyarakat, pengumuman, dan informasi terbaru Desa Semparuk.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BERITA UNGGULAN ================= -->
+
+    <section class="featured-news">
+
+        <div class="featured-card">
+
+            <img id="featuredImage" src="img/berita/panen-raya.jpg" alt="Panen Raya">
+
+            <div class="featured-content">
+
+                <span class="badge" id="featuredBadge">PERTANIAN</span>
+
+                <h2 id="featuredTitle">
+                    Panen Raya Persawahan Desa Semparuk
+                </h2>
+
+                <p class="date" id="featuredDate">
+                    <i class="fa-regular fa-calendar"></i>
+                    25 Agustus 2026
+                </p>
+
+                <p id="featuredDesc">
+                    Musim panen menjadi momen penting bagi masyarakat Desa Semparuk
+                    yang mayoritas bekerja sebagai petani.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= KATEGORI ================= -->
+
+    <section class="kategori">
+
+        <div class="kategori-wrap">
+
+            <button class="kategori-btn active" data-filter="semua">
+                Semua
+            </button>
+
+            <button class="kategori-btn" data-filter="pertanian">
+                Pertanian
+            </button>
+
+            <button class="kategori-btn" data-filter="kegiatan">
+                Kegiatan
+            </button>
+
+            <button class="kategori-btn" data-filter="pengumuman">
+                Pengumuman
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BERITA TERBARU ================= -->
+
+    <section class="news-list" id="newsSection">
+
+        <div class="title left" id="newsTitle">
+
+            <h2>Berita Terbaru</h2>
+
+            <p>Informasi kegiatan dan pelayanan masyarakat Desa Semparuk.</p>
+
+        </div>
+
+        <div class="news-grid">
+
+            <!-- PERTANIAN -->
+            <article class="news-card" data-category="pertanian">
+
+                <img src="img/berita/panen-raya.jpg" alt="Panen Raya">
+
+                <div class="news-content">
+
+                    <span class="news-tag pertanian">PERTANIAN</span>
+
+                    <h3>Panen Raya Persawahan Desa Semparuk</h3>
+
+                    <p>
+                        25 Agustus 2026 • Musim panen menjadi momen penting
+                        bagi para petani Desa Semparuk.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- KEGIATAN -->
+            <article class="news-card" data-category="kegiatan">
+
+                <img src="img/berita/gotong-royong.jpg" alt="Gotong Royong">
+
+                <div class="news-content">
+
+                    <span class="news-tag kegiatan">KEGIATAN</span>
+
+                    <h3>Gotong Royong Membersihkan Parit</h3>
+
+                    <p>
+                        28 Agustus 2026 • Warga bergotong royong menjaga
+                        kebersihan lingkungan dan parit desa.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- PENGUMUMAN -->
+            <article class="news-card" data-category="pengumuman">
+
+                <img src="img/berita/pengumuman.jpg" alt="Pengumuman">
+
+                <div class="news-content">
+
+                    <span class="news-tag pengumuman">PENGUMUMAN</span>
+
+                    <h3>Kapolsek Semparuk Jadi Inspektur Upacara Penurunan Bendera</h3>
+
+                    <p>
+                        18 Agustus 2026 • Peringati HUT RI Ke 81, Kapolsek Semparuk Jadi Inspektur Upacara Penurunan Bendera Di Kantor Camat Semparuk
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- KEGIATAN -->
+            <article class="news-card" data-category="kegiatan">
+
+                <img src="img/berita/rapat.jpg" alt="Musyawarah Desa">
+
+                <div class="news-content">
+
+                    <span class="news-tag kegiatan">KEGIATAN</span>
+
+                    <h3>Musyawarah Pembangunan Desa</h3>
+
+                    <p>
+                        20 Agustus 2026 • Pembahasan program pembangunan
+                        bersama masyarakat Desa Semparuk.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- PERTANIAN -->
+            <article class="news-card" data-category="pertanian">
+
+                <img src="img/berita/sawah.jpg" alt="Sawah">
+
+                <div class="news-content">
+
+                    <span class="news-tag pertanian">PERTANIAN</span>
+
+                    <h3>Perawatan Sawah Memasuki Musim Tanam</h3>
+
+                    <p>
+                        12 Agustus 2026 • Kelompok tani mulai mempersiapkan
+                        lahan persawahan menjelang musim tanam.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- PENGUMUMAN -->
+            <article class="news-card" data-category="pengumuman">
+
+                <img src="img/berita/masjid.jpg" alt="Kerja Bakti">
+
+                <div class="news-content">
+
+                    <span class="news-tag pengumuman">PENGUMUMAN</span>
+
+                    <h3>Jadwal Kerja Bakti Lingkungan Masjid</h3>
+
+                    <p>
+                        8 Agustus 2026 • Seluruh warga diundang mengikuti
+                        kerja bakti pada hari Minggu pagi.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>Desa Semparuk</h3>
+
+            <p>Kecamatan Semparuk · Kabupaten Sambas · Kalimantan Barat</p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+                © 2026 Desa Semparuk
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian | Desa Semparuk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<header>
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        <i class="fa-solid fa-seedling"></i>
+        <div>
+            <h2>Desa Semparuk</h2>
+            <span>Sambas • Kalimantan Barat</span>
+        </div>
+    </a>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="fasilitas.html">Fasilitas</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari informasi...">
+        <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+</nav>
+</header>
+
+<!-- ===== HEADER PENCARIAN ===== -->
+
+<section class="search-header">
+
+<div class="search-header-content">
+
+<div>
+<p>HASIL PENCARIAN</p>
+<h1 id="keywordTitle">panen</h1>
+</div>
+
+<div class="result-badge">
+<span id="resultCount">0</span>
+<p>Hasil</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HASIL ===== -->
+
+<section class="search-page">
+
+<div id="searchResults" class="search-result-list">
+
+<!-- Diisi otomatis oleh search.js -->
+
+</div>
+
+<div id="emptyResult" class="empty-result" style="display:none;">
+<i class="fa-solid fa-circle-info"></i>
+<h3>Informasi tidak ditemukan</h3>
+<p>Coba gunakan kata kunci lain seperti panen, parit, atau pelayanan.</p>
+</div>
+
+<div class="search-suggestion">
+
+<h4><i class="fa-solid fa-lightbulb"></i> Saran pencarian</h4>
+
+<div class="suggestion-tags">
+    <span class="suggestion">panen</span>
+    <span class="suggestion">parit</span>
+    <span class="suggestion">musyawarah</span>
+    <span class="suggestion">pelayanan</span>
+    <span class="suggestion">masjid</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Desa Semparuk</h3>
+<p>Kecamatan Semparuk · Kabupaten Sambas · Kalimantan Barat</p>
+
+<hr>
+
+<p class="copyright">
+© 2026 Desa Semparuk
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
